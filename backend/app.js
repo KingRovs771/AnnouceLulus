@@ -6,7 +6,7 @@ const config = require('./config');
 const app = express();
 const PORT = config.port;
 
-const  corsOptions = {
+const corsOptions = {
     origin : config.corsOrigin,
     methods : 'GET, HEAD, PUT, PATCH, POST, DELETE',
     credentials : true,

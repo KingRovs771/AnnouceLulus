@@ -1,12 +1,12 @@
 const path = require("path");
 require('dotenv').config({
-    path: path.resolve(__dirname, `../.env.${process.env.NODE_ENV || 'development'}`)
+    path: path.resolve(__dirname, `../.env.${process.env.NODE_ENV}`)
 });
 
 const config = {
-    env : process.env.NODE_ENV || 'development',
+    env : process.env.NODE_ENV,
     port : process.env.PORT || 5000,
-    corsOrigin : process.env.CORS_ORIGIN || 'http://localhost:5173',
+    corsOrigin : process.env.CORS_ORIGIN || 'http://103.67.78.27',
 
     db :{
         host : process.env.DB_HOST ,
